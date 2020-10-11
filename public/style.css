@@ -1,0 +1,70 @@
+header{
+    color: white;
+    background-color: rgb(72,72,72);
+    padding: 2% 5% 5% 5%;
+}
+#contact{
+    display: flex;
+}
+
+#contact li{
+    display: inline-block;
+    margin: auto;
+}
+
+header li label{
+    color: rgb(239, 170, 39);
+}
+
+#profile-pic{
+    object-fit: cover;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+}
+
+#main-bio{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+h3 , h4 {
+    display: inline;
+}
+
+section{
+    padding: 5%;
+}
+
+#workEX{
+    background-color: rgb(224, 225, 226); 
+}
+
+#Education{
+    background-color: rgb(224, 225, 226);
+}
+
+@media screen and (max-width: 1200px){
+    #profile-pic{
+        object-fit: cover;
+        width: 40%;
+        height: 40%;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    #main-bio{
+        display:block;
+        text-align: center;
+    }
+    #contact li{
+        display: block;
+    }
+    #profile-pic{
+        object-fit: cover;
+        width: 320px;
+        height: 320px;
+    }
+}
