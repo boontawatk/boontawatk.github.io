@@ -1,0 +1,23 @@
+{
+  "name": "boontawatk.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "semantic-ui-css": "^2.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boontawatk/boontawatk.github.io.git"
+  },
+  "author": "Boontawat Kumpiroj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boontawatk/boontawatk.github.io/issues"
+  },
+  "homepage": "https://github.com/boontawatk/boontawatk.github.io#readme"
+}
