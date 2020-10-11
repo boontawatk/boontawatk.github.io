@@ -61,6 +61,25 @@ footer{
     right: 0;
 }
 
+#main-bio ul{
+    padding-left: 35%;
+    list-style: none;
+}
+
+
+/* #main-bio li{
+    font-family: FontAwesome;
+    list-style-type: "\f299     ";
+    text-align: start;
+} */
+
+#main-bio li::before{
+    font-family: FontAwesome;
+    content: "\f299";
+    text-align: start;
+    color: rgb(101, 199, 101);
+}
+
 @media screen and (max-width: 1200px){
     #profile-pic{
         object-fit: cover;
