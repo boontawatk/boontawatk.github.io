@@ -16,6 +16,11 @@ header li label{
     color: rgb(239, 170, 39);
 }
 
+#github{
+    font-size: 36px;
+    color: white;
+}
+
 #profile-pic{
     object-fit: cover;
     width: 480px;
@@ -37,6 +42,8 @@ section{
     padding: 5%;
 }
 
+
+
 #workEX{
     background-color: rgb(224, 225, 226); 
 }
@@ -45,11 +52,26 @@ section{
     background-color: rgb(224, 225, 226);
 }
 
+footer{
+    background-color: rgb(53, 52, 52);
+    color:  rgb(239, 170, 39);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 @media screen and (max-width: 1200px){
     #profile-pic{
         object-fit: cover;
         width: 40%;
         height: 40%;
+    }
+    #Education{
+        padding-bottom:8%;
+    }
+    .contact-str{
+        display: inline;
     }
 }
 
@@ -59,12 +81,15 @@ section{
         display:block;
         text-align: center;
     }
-    #contact li{
-        display: block;
-    }
     #profile-pic{
         object-fit: cover;
         width: 320px;
         height: 320px;
+    }
+    #Education{
+        padding-bottom:20%;
+    }
+    .contact-str{
+        display: none;
     }
 }
