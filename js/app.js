@@ -1,4 +1,4 @@
-let Bio = {
+var resumeRawData = {
   name: "Boontawat",
   surname: "Kumpiroj",
   profilePic: "img/profile.jpg",
@@ -7,55 +7,60 @@ let Bio = {
     "Full Stack Developer",
     "Backend Developer",
     "Software Engineer",
-  ]
-};
-
-let contact= {
+  ],
+  contact: {
     tel: "+6684-018-5358",
     email: "boontawat.k@gmail.com",
     github: "",
     Linkedin: "",
-    Location: "Bangkok, Thailand"
+    Location: "Bangkok, Thailand",
+  },
+  workEx: [
+    {
+      Location: "HiveGround",
+      Roles: "Firmware Developer Intern",
+      description: "asfsaf",
+    },
+    {
+      Location: "Mitsubishi Electric Automation Thailand",
+      Roles: "Design Engineer",
+      description: "asfsaf",
+    },
+    {
+      Location: "First Multitec",
+      Roles: "Sales Engineer",
+      description: "asfsaf",
+    },
+  ],
+  project: [
+    {
+      name: "sdaf",
+      description: "aweg",
+    },
+    {
+      name: "sdaf",
+      description: "aweg",
+    },
+  ],
+  Education : [
+    {
+      place: "Chulalongkorn University",
+      degree: "B.E.Mechanical Engineering",
+      years: "2015-2018",
+    },
+    {
+      place: "Bodindecha(Sing Singhaseni)2 School",
+      degree: "Intensive Math Science Program",
+      years: "2009-2014",
+    },
+  ]
+};
+
+let resumeData=function(data){
+    let self=this;
+    self.fullname=ko.computed(function(){
+        return data.name+" "+data.surname;
+    });
 }
 
-let workEx = [
-  {
-    Location: "HiveGround",
-    Roles: "Firmware Developer Intern",
-    description: "asfsaf"
-  },
-  {
-    Location: "Mitsubishi Electric Automation Thailand",
-    Roles: "Design Engineer",
-    description: "asfsaf"
-  },
-  {
-    Location: "First Multitec",
-    Roles: "Sales Engineer",
-    description: "asfsaf"
-  }
-];
-
-let project=[
-    {
-        name:"sdaf",
-        description:"aweg",
-    },
-    {
-        name:"sdaf",
-        description:"aweg",
-    }
-]
-
-let Education=[
-    {
-        place: "Chulalongkorn University",
-        degree: "B.E.Mechanical Engineering",
-        years: "2015-2018"
-    },
-    {
-        place: "Bodindecha(Sing Singhaseni)2 School",
-        degree: "Intensive Math Science Program",
-        years: "2009-2014"
-    },
-]
+ko.applyBindings(new resumeData(resumeRawData));
