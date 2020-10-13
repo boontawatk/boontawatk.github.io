@@ -1,114 +1,115 @@
-header{
-    color: white;
-    background-color: rgb(72,72,72);
-    padding: 2% 5% 5% 5%;
+header {
+  color: white;
+  background-color: rgb(72, 72, 72);
+  padding: 2% 5%;
 }
-#contact{
+
+header li label {
+  color: rgb(239, 170, 39);
+}
+
+#main-bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1%;
+  text-align: center;
+}
+
+#profile-pic {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+#main-bio ul {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 0;
+  text-align: left;
+  list-style-type: none;
+}
+
+#main-bio li::before {
+  font-family: FontAwesome;
+  content: "\f299  ";
+  color: rgb(101,199,101);
+}
+
+h3,
+h4 {
+  display: inline;
+}
+
+section {
+  padding: 3%;
+}
+
+#workEX {
+  background-color: rgb(224, 225, 226);
+}
+
+#Education {
+  background-color: rgb(224, 225, 226);
+}
+
+footer {
+  background-color: rgb(53, 52, 52);
+  color: rgb(239, 170, 39);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#contact {
+  display: flex;
+}
+
+#contact li {
+  display: inline-block;
+  margin: auto;
+}
+
+#github {
+  font-size: 36px;
+  color: white;
+}
+
+
+#Education {
+  padding-bottom: 8%;
+}
+.contact-str {
+  display: inline;
+}
+
+#main-bio div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
+
+@media screen and (max-width: 800px) {
+  #main-bio {
     display: flex;
-}
-
-#contact li{
-    display: inline-block;
-    margin: auto;
-}
-
-header li label{
-    color: rgb(239, 170, 39);
-}
-
-#github{
-    font-size: 36px;
-    color: white;
-}
-
-#profile-pic{
-    object-fit: cover;
-    width: 480px;
-    height: 480px;
-    border-radius: 50%;
-}
-
-#main-bio{
-    display:flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     padding: 1%;
-}
-
-h3 , h4 {
-    display: inline;
-}
-
-section{
-    padding: 5%;
-}
-
-
-
-#workEX{
-    background-color: rgb(224, 225, 226); 
-}
-
-#Education{
-    background-color: rgb(224, 225, 226);
-}
-
-footer{
-    background-color: rgb(53, 52, 52);
-    color:  rgb(239, 170, 39);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-#main-bio ul{
-    padding-left: 35%;
-    list-style: none;
-}
-
-
-/* #main-bio li{
-    font-family: FontAwesome;
-    list-style-type: "\f299     ";
-    text-align: start;
-} */
-
-#main-bio li::before{
-    font-family: FontAwesome;
-    content: "\f299";
-    text-align: start;
-    color: rgb(101, 199, 101);
-}
-
-@media screen and (max-width: 1200px){
-    #profile-pic{
-        object-fit: cover;
-        width: 40%;
-        height: 40%;
-    }
-    #Education{
-        padding-bottom:8%;
-    }
-    .contact-str{
-        display: inline;
-    }
-}
-
-
-@media screen and (max-width: 800px){
-    #main-bio{
-        display:block;
-        text-align: center;
-    }
-    #profile-pic{
-        object-fit: cover;
-        width: 320px;
-        height: 320px;
-    }
-    #Education{
-        padding-bottom:20%;
-    }
-    .contact-str{
-        display: none;
-    }
+    text-align: center;
+  }
+  #profile-pic {
+    object-fit: cover;
+    width: 320px;
+    height: 320px;
+  }
+  #Education {
+    padding-bottom: 20%;
+  }
+  .contact-str {
+    display: none;
+  }
 }
