@@ -103,4 +103,3 @@ let resumeData = function (data) {
   }
 };
 
-ko.applyBindings(new resumeData(resumeRawData));
