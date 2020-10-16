@@ -2,9 +2,9 @@ var resumeRawData = {
   name: "Boontawat",
   surname: "Kumpiroj",
   profilePic: "img/profile.jpg",
-  intro: "I'm a multipotentialolie who interest in cutting-edge technology.",
+  intro: "\"I'm a multipotentialolite who interest in software development. I'm seeking an opportunities in Full Stack Developer position. I'd love to hear any opportunity from your company!\"",
   interestRoles: [
-    "Full Stack Developer",
+    "Full Stack Developer (MERN stack)",
     "Backend Developer",
     "Software Engineer",
   ],

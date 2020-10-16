@@ -18,7 +18,7 @@
           <section id="main-bio">
             <img id="profile-pic" src="img/profile.jpg" alt="">
             <div>
-                <p data-bind="text: intro"></p>
+                <em id="intro" data-bind="text: intro"></em>
                 <h2>My interested role</h3>
                 <ul data-bind="foreach:interestRoles()">
                     <li data-bind="text: $data"></li>
@@ -29,25 +29,31 @@
       <main>
         <section>
           <h2>Skills</h2>
-          <div>
-            <ul data-bind="foreach: skills().language">
-              <li data-bind="text: $data"></li>
-            </ul>
-          </div>
-          <div>
-            <ul data-bind="foreach: skills().technology">
-              <li data-bind="text: $data"></li>
-            </ul>
-          </div>
-          <div>
-            <ul data-bind="foreach: skills().tools">
-              <li data-bind="text: $data"></li>
-            </ul>
-          </div>
-          <div>
-            <ul data-bind="foreach: skills().softSkill">
-              <li data-bind="text: $data"></li>
-            </ul>
+          <div id="skills">
+            <div>
+              <h3>Programming Language</h3>
+              <ul data-bind="foreach: skills().language">
+                <li data-bind="text: $data"></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Technology/Frameworks</h3>
+              <ul data-bind="foreach: skills().technology">
+                <li data-bind="text: $data"></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Tools</h3>
+              <ul data-bind="foreach: skills().tools">
+                <li data-bind="text: $data"></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Soft Skills</h3>
+              <ul data-bind="foreach: skills().softSkill">
+                <li data-bind="text: $data"></li>
+              </ul>
+            </div>
           </div>
       </section>
         <section>
@@ -80,6 +86,7 @@
         </section>
       </main>
       <footer>
+        <h2 id="contact-head">Contact</h2>
         <ul id="contact">
           <li><label><a href="" data-bind="attr:{href: 'tel:'+contact().tel}"><button class="ui circular green icon button"><i class="fas fa-phone"></i></button></a><span class="contact-str" data-bind="text:contact().tel"></span></li>
           <li><a href="" data-bind="attr:{href: 'mailto:'+contact().email}"><button class="ui circular red icon button"><i class="fas fa-envelope"></i></button></a><span data-bind="text:contact().email" class="contact-str"></span></li>

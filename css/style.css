@@ -1,3 +1,4 @@
+/* head */
 header {
   color: white;
   background-color: rgb(72, 72, 72);
@@ -13,7 +14,15 @@ header li label {
   flex-direction: row;
   justify-content: center;
   padding: 1%;
-  text-align: center;
+}
+
+#main-bio div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  max-width: 30%;
 }
 
 #profile-pic {
@@ -34,26 +43,41 @@ header li label {
 #main-bio li::before {
   font-family: FontAwesome;
   content: "\f299  ";
-  color: rgb(101,199,101);
+  color: rgb(101, 199, 101);
 }
 
+#intro {
+  font-size: 1.2em;
+}
+
+#intro::first-letter {
+  font-size: 1.5em;
+}
+
+/* main */
 h3,
 h4 {
   display: inline;
 }
 
+main {
+  padding-bottom: 8%;
+  background-color: rgb(224, 225, 226);
+}
+
 section {
   padding: 3%;
 }
-
-#workEX {
-  background-color: rgb(224, 225, 226);
+main section:nth-of-type(even) {
+  background: white;
 }
 
-#Education {
-  background-color: rgb(224, 225, 226);
+#skills{
+  display: flex;
+  justify-content: space-around;
 }
 
+/* footer */
 footer {
   background-color: rgb(53, 52, 52);
   color: rgb(239, 170, 39);
@@ -63,8 +87,15 @@ footer {
   right: 0;
 }
 
+#contact-head{
+  text-align: center;
+  font-size: large;
+  background-color: black;
+}
+
 #contact {
   display: flex;
+  margin: 1% 0;
 }
 
 #contact li {
@@ -77,22 +108,9 @@ footer {
   color: white;
 }
 
-
-#Education {
-  padding-bottom: 8%;
-}
 .contact-str {
   display: inline;
 }
-
-#main-bio div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 3%;
-}
-
 @media screen and (max-width: 800px) {
   #main-bio {
     display: flex;
@@ -101,15 +119,23 @@ footer {
     padding: 1%;
     text-align: center;
   }
+  #main-bio div {
+    max-width: 100%;
+  }
+
   #profile-pic {
     object-fit: cover;
     width: 320px;
     height: 320px;
   }
-  #Education {
+  main {
     padding-bottom: 20%;
   }
   .contact-str {
     display: none;
+  }
+
+  #skills {
+    display: block;
   }
 }
