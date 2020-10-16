@@ -18,53 +18,80 @@
           <section id="main-bio">
             <img id="profile-pic" src="img/profile.jpg" alt="">
             <div>
-                <p>I'm  a multipotentialolie who interest in cutting-edge technology. </p>
+                <p data-bind="text: intro"></p>
                 <h2>My interested role</h3>
-                <ul>
-                    <li>Web Developer</li>
-                    <li>Backend Developer</li>
-                    <li>Software Engineer</li>
+                <ul data-bind="foreach:interestRoles()">
+                    <li data-bind="text: $data"></li>
                 </ul>
             </div>
           </section>
       </header>
-        <section id="workEX">
+      <main>
+        <section>
+          <h2>Skills</h2>
+          <div>
+            <ul data-bind="foreach: skills().language">
+              <li data-bind="text: $data"></li>
+            </ul>
+          </div>
+          <div>
+            <ul data-bind="foreach: skills().technology">
+              <li data-bind="text: $data"></li>
+            </ul>
+          </div>
+          <div>
+            <ul data-bind="foreach: skills().tools">
+              <li data-bind="text: $data"></li>
+            </ul>
+          </div>
+          <div>
+            <ul data-bind="foreach: skills().softSkill">
+              <li data-bind="text: $data"></li>
+            </ul>
+          </div>
+      </section>
+        <section>
+          <h2>Online Course</h2>
+          <div data-bind="foreach: onlineCourse()">
+          <h3><span data-bind="text: $data.courseName"></span> - <h4><a href="" data-bind="attr:{href: $data.certCredent}">Certification credential</a></h4></h3>
+          <p data-bind="text: $data.description"></p>
+        </div>
+      </section>
+        <section>
           <h2>Work Experience</h2>
-          <h3>HiveGround<h4> - Firmware Developer Intern</h4></h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam neque eos possimus, amet minima qui? Ipsa corrupti dolor officiis optio aliquam, consequuntur itaque praesentium dignissimos veritatis nam earum consectetur eos!</p>
-          <h3>Mitsubishi Electric Automation Thailand<h4> - Design Engineer</h4></h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam neque eos possimus, amet minima qui? Ipsa corrupti dolor officiis optio aliquam, consequuntur itaque praesentium dignissimos veritatis nam earum consectetur eos!</p>
-          <h3>First Multitec<h4> - Sales Engineer</h4></h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam neque eos possimus, amet minima qui? Ipsa corrupti dolor officiis optio aliquam, consequuntur itaque praesentium dignissimos veritatis nam earum consectetur eos!</p>
-          
+          <div data-bind="foreach: workEx()">
+          <h3><span data-bind="text: $data.company"></span> - <h4 data-bind="text: $data.role"></h4></h3>
+          <p data-bind="text: $data.description"></p>
+        </div>
         </section>
         <section id="Projects">
           <h2>Projects</h2>
-          <h3><h4> - Vitae iure.</h4></h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam neque eos possimus, amet minima qui? Ipsa corrupti dolor officiis optio aliquam, consequuntur itaque praesentium dignissimos veritatis nam earum consectetur eos!</p>
-          <h3>Recusandae<h4> - Dolores</h4></h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam neque eos possimus, amet minima qui? Ipsa corrupti dolor officiis optio aliquam, consequuntur itaque praesentium dignissimos veritatis nam earum consectetur eos!</p>
+          <div data-bind="foreach: projects()">
+            <h3 data-bind="text: $data.name"></h3>
+            <p data-bind="text: $data.description"></p>  
+          </div>
         </section>
         <section id="Education">
           <h2>Education</h2>
-          <h3>Chulalongkorn University<h4> - B.E. Mechanical Engineering</h4></h3>
-          <p>2015-2018</p>
-          <h3>Bodindecha(Sing Singhaseni)2<h4> - Intensive Math Science Program</h4></h3>
-          <p>2009-2014</p>
+          <div data-bind="foreach: Education()">
+            <h3><span data-bind="text: $data.place"></span> - <h4 data-bind="text: $data.degree"></h4></h3>
+            <p data-bind="text: $data.years"></p>  
+          </div>
         </section>
+      </main>
       <footer>
         <ul id="contact">
-          <li><label><a href="tel:+6684-018-5358"><button class="ui circular green icon button"><i class="fas fa-phone"></i></button></a><span class="contact-str">+6684-018-5358</span></li>
-          <li><a href="mailto:&#098;&#111;&#111;&#110;&#116;&#097;&#119;&#097;&#116;&#046;&#107;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><button class="ui circular red icon button"><i class="fas fa-envelope"></i></button></a><span class="contact-str">&#098;&#111;&#111;&#110;&#116;&#097;&#119;&#097;&#116;&#046;&#107;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</span></li>
-          <li><a href="#"><div id="github"><i class="fab fa-github"></i></div></a></li>
+          <li><label><a href="" data-bind="attr:{href: 'tel:'+contact().tel}"><button class="ui circular green icon button"><i class="fas fa-phone"></i></button></a><span class="contact-str" data-bind="text:contact().tel"></span></li>
+          <li><a href="" data-bind="attr:{href: 'mailto:'+contact().email}"><button class="ui circular red icon button"><i class="fas fa-envelope"></i></button></a><span data-bind="text:contact().email" class="contact-str"></span></li>
+          <li><a href="" data-bind="attr:{href: contact().github}"><div id="github"><i class="fab fa-github"></i></div></a></li>
           <li>
-            <a href="https://www.linkedin.com/in/boontawat-kumpiroj">
+            <a href="" data-bind="attr:{href: contact().Linkedin}">
             <button class="ui circular linkedin icon button">
             <i class="fab fa-linkedin"></i>
             </button>
             </a>
           </li>
-          <li id="location"><i class="fas fa-map-marker-alt"></i> Bangkok, Thailand</li>
+          <li id="location"><i class="fas fa-map-marker-alt"></i> <span data-bind="text:contact().Location"></span></li>
         </ul>
       </footer>
       
