@@ -11,7 +11,7 @@ var resumeRawData = {
   contact: {
     tel: "+6684-018-5358",
     email: "boontawat.k@gmail.com",
-    github: "aaa",
+    github: "",
     Linkedin: "https://www.linkedin.com/in/boontawat-kumpiroj",
     Location: "Bangkok, Thailand",
   },
