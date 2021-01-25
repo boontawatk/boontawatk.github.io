@@ -56,13 +56,13 @@
             </div>
           </div>
       </section>
-        <!-- <section>
+        <section>
           <h2>Online Course</h2>
           <div data-bind="foreach: onlineCourse()">
           <h3><span data-bind="text: $data.courseName"></span> - <h4><a href="" data-bind="attr:{href: $data.certCredent}">Certification credential</a></h4></h3>
           <p data-bind="text: $data.description"></p>
         </div>
-      </section> -->
+      </section>
         <section>
           <h2>Work Experience</h2>
           <div data-bind="foreach: workEx()">
@@ -70,13 +70,13 @@
           <p data-bind="text: $data.description"></p>
         </div>
         </section>
-        <!-- <section id="Projects">
+        <section id="Projects">
           <h2>Projects</h2>
           <div data-bind="foreach: projects()">
-            <h3 data-bind="text: $data.name"></h3>
-            <p data-bind="text: $data.description"></p>  
+            <h3><span data-bind="text: $data.name"></span> - <h4><a href="" data-bind="attr:{href: $data.repo}">Repository</a></h4> <a class="ui button" href="" data-bind="attr:{href: $data.play}">Play</a></h3>
+            <p data-bind="text: $data.description"></p>
           </div>
-        </section> -->
+        </section>
         <section id="Education">
           <h2>Education</h2>
           <div data-bind="foreach: Education()">

@@ -2,16 +2,17 @@ var resumeRawData = {
   name: "Boontawat",
   surname: "Kumpiroj",
   profilePic: "img/profile.jpg",
-  intro: "\"I'm a multipotentialite who interested in software development, seeking an opportunities to be a Full Stack developer. I'd love to hear any opportunities from your company!\"",
+  intro:
+    "\"I'm a multipotentialite who interested in software development, seeking an opportunities to be a Full Stack developer. I'd love to hear any opportunities from your company!\"",
   interestRoles: [
-    "Full Stack Developer (MERN stack)",
+    "Full Stack Developer",
     "Backend Developer",
     "Software Engineer",
   ],
   contact: {
     tel: "+6684-018-5358",
     email: "boontawat.k@gmail.com",
-    github: "",
+    github: "https://github.com/boontawatk",
     Linkedin: "https://www.linkedin.com/in/boontawat-kumpiroj",
     Location: "Bangkok, Thailand",
   },
@@ -19,27 +20,34 @@ var resumeRawData = {
     {
       company: "HiveGround",
       role: "Firmware Developer Intern",
-      description: "HiveGround is robotic start-up company, I was an intern there for 2 months during summer. They gave me projects to develop firmware of micro-controller for UAV(Drone). I worked with 2 different brands of micro-controller Pixhawk and STM32 which introduce me to software development world. I've learn how micro-controller works in both high-level and low-level. I also learn about software development tools such as VScode, terminal, and Git Version Control",
+      description:
+        "HiveGround is robotic start-up company, I was an intern there for 2 months during summer. They gave me projects to develop firmware of micro-controller for UAV(Drone). I worked with 2 different brands of micro-controller Pixhawk and STM32 which introduce me to software development world. I've learn how micro-controller works in both high-level and low-level. I also learn about software development tools such as VScode, terminal, and Git Version Control",
     },
     {
       company: "Mitsubishi Electric Automation Thailand",
       role: "Design Engineer",
-      description: "Mitsubishi Electric Automation Thailand is market-lead motor&pump manufacturer, I worked there for 8 months. My role is Design Engineer in Pump Design team, which has responsibility to design, modify and develop pump for our clients. I worked with fluid mechanics, CAD software, multi-physics simulation software. It's not only my responsibility there, they gave me a job to build their website for the team which introduce me in web development area.",
+      description:
+        "Mitsubishi Electric Automation Thailand is market-lead motor&pump manufacturer, I worked there for 8 months. My role is Design Engineer in Pump Design team, which has responsibility to design, modify and develop pump for our clients. I worked with fluid mechanics, CAD software, multi-physics simulation software. It's not only my responsibility there, they gave me a job to build their website for the team which introduce me in web development area.",
     },
     {
       company: "First Multitec",
       role: "Sales Engineer",
-      description: "First Multitec is sales representative company of machinery in cement & bulk material industry. I worked there for 5 months. My role is to corporate with clients to sell the machine that meet their requirement and contact with suppliers around the world to serve after sales services.",
+      description:
+        "First Multitec is sales representative company of machinery in cement & bulk material industry. I worked there for 5 months. My role is to corporate with clients to sell the machine that meet their requirement and contact with suppliers around the world to serve after sales services.",
     },
   ],
   projects: [
     {
-      name: "Vitae iure",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam neque eos possimus, amet minima qui? Ipsa corrupti dolor officiis optio aliquam, consequuntur itaque praesentium dignissimos veritatis nam earum consectetur eos!",
+      name: "Video Streaming(In progress)",
+      description:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam neque eos possimus, amet minima qui? Ipsa corrupti dolor officiis optio aliquam, consequuntur itaque praesentium dignissimos veritatis nam earum consectetur eos!",
+      repo: "",
     },
     {
-      name: "Recusandae",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam neque eos possimus, amet minima qui? Ipsa corrupti dolor officiis optio aliquam, consequuntur itaque praesentium dignissimos veritatis nam earum consectetur eos!",
+      name: "Tic Tac Toe",
+      description: "Tic Tac Toe games for two players using React+Hooks",
+      repo: "",
+      play: "https://boontawatk.github.io/tictactoe/",
     },
   ],
   Education: [
@@ -54,43 +62,42 @@ var resumeRawData = {
       years: "2009-2014",
     },
   ],
-  onlineCourse:[
+  onlineCourse: [
     {
-      courseName:"data science",
-      certCredent:"",
-      description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam eaque consequatur suscipit itaque adipisci doloremque explicabo nulla natus tempora accusantium, aspernatur neque officia ducimus ipsum quod alias culpa quasi?"
+      courseName: "data science",
+      certCredent: "",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam eaque consequatur suscipit itaque adipisci doloremque explicabo nulla natus tempora accusantium, aspernatur neque officia ducimus ipsum quod alias culpa quasi?",
     },
     {
-      courseName:"web dev bootcamp",
-      certCredent:"",
-      description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam eaque consequatur suscipit itaque adipisci doloremque explicabo nulla natus tempora accusantium, aspernatur neque officia ducimus ipsum quod alias culpa quasi?"
-    }
+      courseName: "web dev bootcamp",
+      certCredent: "",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam eaque consequatur suscipit itaque adipisci doloremque explicabo nulla natus tempora accusantium, aspernatur neque officia ducimus ipsum quod alias culpa quasi?",
+    },
+    {
+      courseName: "web dev bootcamp",
+      certCredent: "",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam eaque consequatur suscipit itaque adipisci doloremque explicabo nulla natus tempora accusantium, aspernatur neque officia ducimus ipsum quod alias culpa quasi?",
+    },
   ],
-  skills:{
-    language:[
-      "HTML",
-      "CSS",
-      "Javascript",
-    ],
-    technology:[
+  skills: {
+    language: ["HTML", "CSS", "Javascript"],
+    technology: [
+      "React & Redux",
       "NodeJS",
       "ExpressJS",
       "MongoDB & MongooseJS",
+      "MySQL",
       "KnockOutJS",
       "Bootstrap 4",
       "Semantic UI",
-      "Wordpress (Usage)"
+      "Wordpress (User)",
     ],
-    tools:[
-      "VScode",
-      "Git version control"
-    ]
-    ,
-    softSkill:[
-      "Good Self Learner",
-      "Good team player"
-    ]
-  }
+    tools: ["VScode", "Git version control"],
+    softSkill: ["Good Self Learner", "Good team player"],
+  },
 };
 
 let resumeData = function (data) {
@@ -98,8 +105,7 @@ let resumeData = function (data) {
   self.fullname = ko.computed(function () {
     return data.name + " " + data.surname;
   });
-  for(key in data){
-    self[key]=ko.observable(data[key]);
+  for (key in data) {
+    self[key] = ko.observable(data[key]);
   }
 };
-
