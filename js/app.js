@@ -40,14 +40,29 @@ var resumeRawData = {
     {
       name: "Video Streaming(In progress)",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam neque eos possimus, amet minima qui? Ipsa corrupti dolor officiis optio aliquam, consequuntur itaque praesentium dignissimos veritatis nam earum consectetur eos!",
-      repo: "",
+        "Video Streaming web app to stream real-time video via OBS. This project using Google OAuth to identify user. Technologies used are React, React-Router, Redux",
+      repo: "https://github.com/boontawatk/streams",
+      play: "#",
     },
     {
       name: "Tic Tac Toe",
       description: "Tic Tac Toe games for two players using React+Hooks",
-      repo: "",
+      repo: "https://github.com/boontawatk/tictactoe",
       play: "https://boontawatk.github.io/tictactoe/",
+    },
+    {
+      name: "Yelp Camp",
+      description:
+        "Full Stack project in Web Developer Bootcamp course by Colt Steele. Front End technology used is simple HTML, CSS, JS with Bootstrap and EJS template. Back End technology used is Nodejs, Express, MongoDB with RESTful routing and authentication & authorization system.",
+      repo: "https://github.com/boontawatk/YelpCamp",
+      play: "#",
+    },
+    {
+      name: "Exercise Robot",
+      description:
+        "Desktop robot for tracking you while you're exercising, don't be afraid to getting out of the frame!. This project made with STM32 board to control motor's position and Microsoft Kinect for skeleton tracking.",
+      repo: "https://gitlab.com/boontawat.k/exercise-robot/",
+      play: "#",
     },
   ],
   Education: [
@@ -64,22 +79,31 @@ var resumeRawData = {
   ],
   onlineCourse: [
     {
-      courseName: "data science",
+      courseName: "The Web Developer Bootcamp",
       certCredent: "",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam eaque consequatur suscipit itaque adipisci doloremque explicabo nulla natus tempora accusantium, aspernatur neque officia ducimus ipsum quod alias culpa quasi?",
+      description: "HTML, CSS, JavaScript, Bootstrap, NodeJS, Express, MongoDB",
     },
     {
-      courseName: "web dev bootcamp",
+      courseName: "Modern React with Redux",
       certCredent: "",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam eaque consequatur suscipit itaque adipisci doloremque explicabo nulla natus tempora accusantium, aspernatur neque officia ducimus ipsum quod alias culpa quasi?",
+        "React v16.6.3 and Redux with React Router, Webpack, and Create-React-App. Includes Hooks!",
     },
     {
-      courseName: "web dev bootcamp",
+      courseName: "JavaScript Algorithms and Data Structures Masterclass",
       certCredent: "",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam eaque consequatur suscipit itaque adipisci doloremque explicabo nulla natus tempora accusantium, aspernatur neque officia ducimus ipsum quod alias culpa quasi?",
+        "Big O notation, searching algorithm, sorting algorithm, data structure, Dijkstra's algorithm",
+    },
+    {
+      courseName: "JavaScript: Understanding the Weird Parts",
+      certCredent: "",
+      description: "JavaScript in details",
+    },
+    {
+      courseName: "JavaScript Design Patterns",
+      certCredent: "",
+      description: "Organizing code, MVO concept,",
     },
   ],
   skills: {
@@ -90,9 +114,6 @@ var resumeRawData = {
       "ExpressJS",
       "MongoDB & MongooseJS",
       "MySQL",
-      "KnockOutJS",
-      "Bootstrap 4",
-      "Semantic UI",
       "Wordpress (User)",
     ],
     tools: ["VScode", "Git version control"],
