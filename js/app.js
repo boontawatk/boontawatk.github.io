@@ -117,7 +117,7 @@ var resumeRawData = {
       "Wordpress (User)",
     ],
     tools: ["VScode", "Git version control"],
-    softSkill: ["Good Self Learner", "Good team player"],
+    softSkill: ["Good Self Learner", "Good team player", "TOEIC SCORE: 745"],
   },
 };
 
