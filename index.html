@@ -31,8 +31,13 @@
           <h2>Skills</h2>
           <div id="skills">
             <div>
-              <h3>Programming Language</h3>
-              <ul data-bind="foreach: skills().language">
+              <div><h3>Programming Language</h3></div>
+              <div><h4>- Main</h4></div>
+              <ul data-bind="foreach: skills().language.main">
+                <li data-bind="text: $data"></li>
+              </ul>
+              <div><h4>- Optional</h4></div>
+              <ul data-bind="foreach: skills().language.optional">
                 <li data-bind="text: $data"></li>
               </ul>
             </div>
@@ -73,7 +78,18 @@
         <section id="Projects">
           <h2>Projects</h2>
           <div data-bind="foreach: projects()">
-            <h3><span data-bind="text: $data.name"></span> - <h4><a href="" data-bind="attr:{href: $data.repo}">Repository</a></h4> <a class="ui button" href="" data-bind="attr:{href: $data.play}">Play</a></h3>
+            
+            <h3>
+              <span data-bind="text: $data.name"></span>
+              <span data-bind="if: $data.repo"> - 
+              <h4>
+                <a href="" data-bind="attr:{href: $data.repo}">Repository</a>
+              </h4>
+            </span>
+            <span data-bind="if: $data.play">
+              <a class="ui button" href="" data-bind="attr:{href: $data.play}">Play</a></span>
+            </h3>
+            
             <p data-bind="text: $data.description"></p>
           </div>
         </section>

@@ -6,7 +6,7 @@ var resumeRawData = {
     "\"I'm a multipotentialite who interested in software development, seeking an opportunities to be a Full Stack developer. I'd love to hear any opportunities from your company!\"",
   interestRoles: [
     "Full Stack Developer",
-    "Backend Developer",
+    "Frontend Developer",
     "Software Engineer",
   ],
   contact: {
@@ -17,6 +17,12 @@ var resumeRawData = {
     Location: "Bangkok, Thailand",
   },
   workEx: [
+    {
+      company: "H-lab",
+      role: "Frontend Developer (Current Job)",
+      description:
+        "H-lab is technology based entertainment company, my responsibility are developing web application and mobile application for our clients such as online siminar and realtime event.",
+    },
     {
       company: "HiveGround",
       role: "Firmware Developer Intern",
@@ -38,6 +44,27 @@ var resumeRawData = {
   ],
   projects: [
     {
+      name: "Activ21",
+      description:
+        "Mobile Application for online contest, gaining quiz point during event time to win the prize",
+      repo: null,
+      play: null,
+    },
+    {
+      name: "MOVE - Online Seminar",
+      description:
+        "Web application for business matching in Thailand film industry and worldwide",
+      repo: null,
+      play: null,
+    },
+    {
+      name: "Game Night",
+      description:
+        "Mobile Application for virtual sport online contest with realtime gaming and quiz event to win the prize",
+      repo: null,
+      play: null,
+    },
+    {
       name: "Video Streaming(In progress)",
       description:
         "Video Streaming web app to stream real-time video via OBS. This project using Google OAuth to identify user. Technologies used are React, React-Router, Redux",
@@ -55,14 +82,14 @@ var resumeRawData = {
       description:
         "Full Stack project in Web Developer Bootcamp course by Colt Steele. Front End technology used is simple HTML, CSS, JS with Bootstrap and EJS template. Back End technology used is Nodejs, Express, MongoDB with RESTful routing and authentication & authorization system.",
       repo: "https://github.com/boontawatk/YelpCamp",
-      play: "#",
+      play: null,
     },
     {
       name: "Exercise Robot",
       description:
         "Desktop robot for tracking you while you're exercising, don't be afraid to getting out of the frame!. This project made with STM32 board to control motor's position and Microsoft Kinect for skeleton tracking.",
       repo: "https://gitlab.com/boontawat.k/exercise-robot/",
-      play: "#",
+      play: null,
     },
   ],
   Education: [
@@ -105,18 +132,28 @@ var resumeRawData = {
       certCredent: "",
       description: "Organizing code, MVO concept,",
     },
+    
   ],
   skills: {
-    language: ["HTML", "CSS", "Javascript"],
+    language: {
+      main: ["HTML", "CSS", "Javascript"],
+      optional: ["Python", "C++"],
+    },
     technology: [
       "React & Redux",
+      "React Native",
       "NodeJS",
       "ExpressJS",
       "MongoDB & MongooseJS",
       "MySQL",
       "Wordpress (User)",
     ],
-    tools: ["VScode", "Git version control"],
+    tools: [
+      "VScode",
+      "Git version control",
+      "Linux terminal",
+      "Docker for development phase",
+    ],
     softSkill: ["Good Self Learner", "Good team player", "TOEIC SCORE: 745"],
   },
 };
