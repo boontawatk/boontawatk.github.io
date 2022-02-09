@@ -1,0 +1,5 @@
+﻿id,employee_id,firstname,lastname,password,salt,team_id,role_id,ischangepwd,score,rewards,created,updated
+1,"40917","annopzzj","gobhiranz","$2a$10$6YW.vMDKlIGvFs.4dGGr8.5dfgR1Cbz2tMFi8IQk5LJ3LLZZgNhHm","$2a$10$6YW.vMDKlIGvFs.4dGGr8.",1,1,FALSE,null,,"2022-02-04T04:43:48.248Z","2022-02-04T04:43:48.248Z"
+2,"40911","pppppp","lllllllp","$2a$10$rrLyEuKmFAzxVqnJh57vduMRwyDD5CQxTZkQfGY/oaW6t3FFmnu0O","$2a$10$rrLyEuKmFAzxVqnJh57vdu",3,2,FALSE,null,,"2022-02-04T04:46:53.462Z","2022-02-04T04:46:53.462Z"
+3,"40900","eoeii","pppsdfkpfs","$2a$10$7oJNT1x8Wlze/Pg/ZOrPtuILkMNhmP.0vG4yU8Qq9R2AthCl/zhyS","$2a$10$7oJNT1x8Wlze/Pg/ZOrPtu",4,1,FALSE,null,,"2022-02-04T04:48:02.406Z","2022-02-04T04:48:02.406Z"
+4,"22222","eoeii","pppsdfkpfs","$2a$10$1uI4E8oHEcK1qP4OMNHVd.9G2bxZyVGYfmoLjKCBqugz0pFygpj6O","$2a$10$1uI4E8oHEcK1qP4OMNHVd.",4,1,FALSE,null,,"2022-02-07T07:19:41.769Z","2022-02-07T07:19:41.769Z"
